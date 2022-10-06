@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Oefening 1</title>
+</head>
+
+<body>
+    <div id="startknop">Start Knop</div>
+    <div class="doel">Doel Knop</div>
+
+    <script>
+        //stel het html object ter beschikking van Javascript "object binnenhalen"
+        var veroorzaker = document.querySelector('#startknop');
+        var reageerder = document.querySelector(".doel");
+        veroorzaker.addEventListener("click", draaien);
+        function draaien(evt) {
+            //reageerder.classList.add("geel");
+            reageerder.classList.toggle("geel");
+        }
+    </script>
+</body>
+
+</html>

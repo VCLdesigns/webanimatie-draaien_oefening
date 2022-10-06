@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#startknop,
+.doel {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+#startknop {
+  background-color: olive;
+  left: 100px;
+}
+.doel {
+  background-color: skyblue;
+  left: 300px;
+}
+
+.geel {
+  /* background-color word niet verandert naar geel omdat de id definitie #doel wint in de css hiërarchie. Eigenschappen van ID door Class vervangen is een mogelijke oplossing*/
+  background-color: yellow;
+  transform: rotate(360deg);
+  transition: transform 1s;
+}
